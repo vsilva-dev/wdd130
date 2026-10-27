@@ -1,0 +1,80 @@
+W01 Learning Activity: Working with Web Images
+
+- optimize images so that they have smaller file sizes
+
+Image File Types:
+ - .jpg
+ - .jpeg
+ - .gif
+ - .png
+ - .webp
+ - .svg
+
+JPEG / JPG: Typically used for photographs and complex images. Uses a compression that loses some information but can greatly reduce file size.
+PNG: Typically used for graphics, logos, and images requiring a transparent background. Uses compression that does not lose information and supports alpha transparency.
+GIF: Typically used for small animations and simple graphics. Limited to 256 colors, but does support basic transparency and animations.
+WEBP: A more modern format that supports better compression than JPG and PNG while also providing for animation and transparency. It is supported by all modern browsers and is usually the best default for photos. AVIF is a newer alternative with even better compression.
+SVG: Typically used for logos, icons, and text that need to scale cleanly to any size.
+
+alt: 
+ - it tells search engines what the image shows
+ - used by screan readers
+
+It is required to provide meaningful and descripive alt text for all images in all WDD courses
+The standard: descriptin of at least two words for each image.
+No use: Image of, picture of 
+Decribe what the image shows
+
+Image Optimization:
+Large images take longer load
+ - page of an image optimizer https://squoosh.app/
+
+Three basic steps of Image Optimization
+- Large photos need to be scaled down and optimized to a size that is actually needed on a web page
+1. Crop the original image to focus on the most important content
+2. Resize the image to the maximum size that is required in the design of the web page
+3. Reduce the quality of the image to an acceptable level which will reduce it file size.
+
+The standard is that all images need to be less than 125 kb in file size.
+
+
+WORKING WITH FILES AND FOLDERS:
+-------------------------------
+Absolute Paths:
+ - used for external resources
+ - on the web should begin with https://
+
+Relative Paths:
+ - ./ : same directory
+ - ../ : parent directory
+
+
+File and Folder Naming Standards:
+When working on the web, there are many things that affect the operation of the files:
+ - the browser
+ - the protocols
+ - the operating system
+ - the language
+
+BEST PRACTICES RULES
+
+Naming convention rules:
+ - use all lowercase syntax : products.html
+ - do not use spaces in the file and folder names. Instead use hyphens: design-document.html
+ - avoid special characters: <,>, \, /, #, ?, !, _
+ - file and folder names should be as short and meaningful as possible: winter-scene-small.png
+ - use standard names for folders. Standard folder names for subfolders are:
+   * styles - constain CSS files
+   * images - contain images
+
+
+SEND CHANGES TO GITHUB
+ working directory -> add -> staging area -> commit -> local repository -> push -> github repository
+
+
+INDEX.html
+----------
+Is a standard page name on web servers that will 
+load by default unless changed by the web server administrator.
+This page will load if the folder containig the index.html page id referenced in a URL
+
