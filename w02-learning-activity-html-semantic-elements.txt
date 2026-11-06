@@ -1,0 +1,389 @@
+HTML decribes the structure of a web page.
+
+Semantic HTML:
+  tags have meaning built into their name
+  Tells the browser and other developers what type of content they content.
+  Help screen readers assist people with visual impairments.
+  Use semantic tags whenever possible beacause they make your code more meaningful and accesible.
+  Use when the content has a specific purpose or meaning
+
+Non-Semantic
+Do not have specific meaning about their content
+Used maily for styling and layout purposes.
+Use when you need to group elements for styling purposes but the content does not have a specific semantic meaning
+
+
+HTML Heading Tags (h1-h6):
+Used to create titles and section headers on web pages
+Search engines also use heading tags to understand the structure and importance of your content
+
+H1: most important heading
+H6: less important heading
+The number describe rank, not size
+
+The Six Heading Tags
+h1 – The main title of your webpage. Use only one h1 tag per page.
+h2 – Major section headings that divide your content into main parts.
+h3 – Subsection headings that break down h2 sections into smaller parts.
+h4 – Minor headings for detailed subsections within h3 sections.
+h5 – Small headings for very specific content areas.
+h6 – The lowest-level heading, rarely used but available for detailed organization.
+
+
+Why you should not skip heading levels:
+  Do not jump from h2 directly to h5 without using h3 and h4 first.
+  Skipping heading levels can cause problems for people who use sreen readers to navigate websites
+  Search engines also prefer websites that use proper heading structure because it helps them understand what your content is about.
+   Following the correct heading order makes your website more accessible and easier to find in search results.
+
+   
+section> agrupa contenido relacionado con un mismo tema, mientras que <aside> contiene información complementaria o secundaria.
+Se utiliza para agrupar contenido que pertenece a una misma sección temática.
+Cada <section> representa una sección temática independiente.
+
+
+2. Elemento <aside>
+Se utiliza para contenido complementario que está relacionado indirectamente con el contenido principal.
+El <aside> podría utilizarse para:
+- Barras laterales (sidebar).
+- Publicidad.
+- Artículos relacionados.
+- Biografías del autor.
+- Información adicional.
+
+
+En HTML, el elemento <article> se utiliza para representar contenido independiente y autónomo, es decir, contenido que tiene sentido por sí mismo y que podría distribuirse o reutilizarse fuera de la página donde se encuentra.
+
+Por ejemplo:
+- Una publicación de un blog.
+- Una noticia.
+- Una reseña de un producto.
+- Un comentario de un usuario.
+- Una publicación de un foro.
+
+
+=============================================
+W02 LEARNING ACTIVITY: AN INTRODUCTION TO CSS
+=============================================
+Describe how the HTML should be displayed
+CSS is all about presentation
+
+https://csszengarden.com/
+
+Cascading : refers to the fact that one style rule can be set up for multiple elements and even work across multiple pages of your website
+            , can also refers to the hierarchical order in which different styling interact with elements
+Style
+Sheets
+
+Ways to work with css:
+  - in line css: not preferred way becaused it eliminares the benefit of reusing
+                 our css styles in many different areas. It can be hard to edit latter
+
+  - embed CSS in in the head section of HTML page: not preferred way
+  - separete CSS file: can share the style sheet in different pages
+
+
+CSS SINTAX
+----------
+
+selector {
+  block
+}
+
+selector: html element we want to style
+
+
+W02 Learning Activity: CSS Units of Measurement
+-----------------------------------------------
+
+* Numeric Values - Two main types:
+ Absolute length: 
+  - pixels ej. 10px is not relative to anything else and is typically the same size on most devices 
+   
+ Relative length:
+  - percentage: 90% - are dependent on their items, including the parent, sibling, or the size of the viewport
+
+* Common length units include:
+
+  px: pixels, an absolute unit.
+
+  %: a percentage of the size of the parent element.
+  em: relative to the current font size of the element.
+  rem: relative to the font size of the root (html) element.
+  vw and vh: 1% of the width or height of the viewport.
+
+* Video Units of Measurements
+
+  valur of 0, the unit is ommited, ej margin: 0;
+  
+  absolute px
+  relative em %
+  
+  Relative units will scale better between different devices, this means ej,
+  an image of a percentage value, ej width: 100%, it will take 100 % of that parts
+  of the page, phone, tablet etc
+  The width would change depending on what device they are using to render the page
+  this is called responsiveness
+
+  Relative measurements scale better and are good for responsive web pages
+
+  The default browser font-size is 16px. Change this with:
+  body {
+    font-size: 24px;
+  }
+
+
+  EM:
+  ---
+  EM is also a relative measurement. This allows to change the size relative
+  to the size of the text in the parent element
+
+  body {
+    font-size: 24px;
+  }
+
+  1em = 24px for a child of body
+
+  If we want to base our measurements off the root or font size in the body regardless of the 
+  immediate parents font-size, we could use REM or Root em
+  
+  1em = 100% of the default font-size
+  1.5em = 150% of the default font-size
+  2em = 200%
+
+  VW (viewport width), WH (viewport height):
+  ------------------------------------------
+  Refers to the width and height referring to the width and height of the 
+  user device
+
+Color Values
+------------
+
+keyword: antiquewhite, burlywood, yellow, lightyellow, etc.
+hexadecimal RGB (red, green, blue): #faebd7
+where the first two characters are the red value, the next two are the green value, and the last two are the blue value in hexadecimal (base 16) format. Each pair ranges from 00 to FF (0 to 255)
+RGB: rgb(250 235 215) or, with transparency, rgb(250 235 215 / 50%)
+where r is a red value ranging from 0 to 255, g is a green value ranging from 0 to 255, b is a blue value ranging from 0 to 255, and the optional last value is the alpha (opacity) value ranging from 0 to 1 (0% to 100%)
+HSL: hsl(34 78% 91%) or hsl(34 78% 91% / 50%)
+where h is the hue (0 to 360), s is the saturation (0% to 100%), l is the lightness (0% to 100%), and the optional last value is the alpha value (0 to 1 or 0% to 100%)
+
+
+====================================
+W02 Learning Activity: CSS Box Model
+====================================
+
+The CSS Box Model is a box that wraps around every element
+From the inside out (desde adentro hacia afuera),
+the model defines how the content, padding, border and margin are rendered
+
+              THE BOX MODEL
+
+    +---------------------------------------+
+    |                                       |
+    |                 MARGIN                |
+    |                                       |
+    |    +-----------------------------+    |
+    |    |                             |    |
+    |    |            BORDER           |    |
+    |    |                             |    |
+    |    |    +-------------------+    |    |
+    |    |    |                   |    |    |
+    |    |    |      PADDING      |    |    |
+    |    |    |                   |    |    |
+    |    |    |   +-----------+   |    |    |
+    |    |    |   |           |   |    |    |
+    |    |    |   |  CONTENT  |   |    |    |
+    |    |    |   |           |   |    |    |
+    |    |    |   +-----------+   |    |    |
+    |    |    |                   |    |    |
+    |    |    +-------------------+    |    |
+    |    |                             |    |
+    |    +-----------------------------+    |
+    |                                       |
+    +---------------------------------------+
+
+All elements have a rectangular box around them.
+each box also has a default width and height
+
+Block level elements have a default width of 100
+In-line and inline block elements will expand and contract to accommodate their content
+
+The default height of an element is determined by its content it will expand
+and contract vertically as necessary to accomodate it content.
+
+The padding and margin properties are very helpful in adding space between various items on the 
+page. This is often referred to as white space or space without images or text
+
+  .para{
+    padding: 40px;
+  }
+
+  .para {
+    padding: 5px (top, bottom) 40px(left right);
+  }
+
+  .para{
+    padding: 5px(top), 60px (left), 15px(bottom) 40px(left)
+  }
+
+border: Every box has a border, even if it's not showing, or if have a default 0 px.
+        Separates the border and the margin.
+        For a visible border we need 3 values:
+
+        .para {
+          border: 5px solid black;
+        }
+
+        different styles
+
+        .para {
+          border: 5px double black;
+        }
+
+        .para {
+          border: 5px dashed black;
+        }
+
+        .para {
+          border: 5px dotted black;
+        }
+
+        .para {
+          border-radius: 5px;
+        }
+
+margin: if we want space around our element or beyond the border
+        we can give them margining
+        The margin allows us to set the amount of space surrounding an element it's the gap between the borders
+        of two adjacent boxes
+
+Podemos configurar solo un lado
+-------------------------------
+  - margin-top: 50px;
+  - margin-bottom: 15px;
+  - margin-rigth: 60px;
+  - margin-left: 20px;
+
+  - padding-top: 5px;
+  - padding-bottom: 15px;
+  - padding-right: 60px;
+  - padding-left: 20px;
+
+
+Ṕor defecto cuando decimos que el width de un elemento
+es 500 pixels, esto no incluye el padding y el border.
+Si tenemos un border de 10 pixeles y un padding de 20 pixeles
+en cada lado, el total full width del elemento es 560 pixeles
+
+
+El box-model puede ser cambiado para calcular el padding y el border 
+en el width general con la propiedad:
+
+box-sizing: border-box
+box-sizing: content-box (default) -> padding y border no estan incluidos en la medida definida, portanto se suman a la medida del contenido
+
+
+
+content: This is where the text and images appear.
+padding: This is the area around the content and separates the content from the border.
+border: The border goes around the padding and separates the padding from the margin.
+margin: This is the transparent space outside of the border that separates the element from its neighbors.
+
+
+Most developers find border-box easier to work with, so it is common to apply it to every element at the top of a stylesheet:
+
+* {
+  box-sizing: border-box;
+}
+
+
+CSS Shorthand Notation
+----------------------
+CSS shorthand notation is generally considered best practice for conciseness and readability.
+However, longhand notation has its uses and can be more appropriate in certain situations where specificity is needed.
+
+Common Border Shorthand
+-----------------------
+border: 1px solid rgb(0 0 0 / 10%);
+This applies a 1-pixel solid black border at 10% opacity around the element, which appears as a faint gray line.
+
+
+
+=====================================================
+W02 Learning Activity: HTML Block and Inline Elements
+=====================================================
+
+Cada elemento se encuentra dentro de su contenedor invisible
+Este contenedor puede ser un bloque o un inLine 
+
+Block:
+  - toman 100% width de su contenedor
+  - no comparten la linea en la cual aparecen con otros elementos
+  - hace que los otros elementos inicien una nueva linea
+  - <div>
+  - <header>
+  - <main>
+  - <footer>
+  - <nav>
+  - <p>
+  - <ul>
+  - <li>
+  - <section>
+  - <article>
+  - <form>
+  - <h1-h6>
+
+InLine:
+  - comparten con otros elementos el espacio en su contenedor hasta que este completo 
+  - <a>
+  - <img>
+  - <span>
+  - <button>
+  - <label>
+
+Podemos cambiar los defaults InLine, in Block con la propiedad display
+
+block -> inline
+#warm_list li {
+  display: inline;
+}
+
+inline -> block
+main img {
+  display: block;
+}
+
+
+inline-block:
+-------------
+Hace que un block elemento fluir como un inline element
+pero va a retener otros features de un block elements
+como setear:
+ - width
+ - heights
+ - bottom
+ - top
+ - margins
+
+ display: inline-block
+
+
+centering
+---------
+Centrar elementos es diferente para cada elemento
+ - text-align: center;
+ - margin 0 auto;
+
+text-align: center:
+  va a centrar el contenido de la caja
+
+margin 0 auto:
+  va a centrar a la caja misma. El primer valor se refiere al top y al bottom,
+  el segundo valor se refiere a la dereceha y la izquierda, le va a dar un mismo gap,
+  necesita un width set, para tomarlo de referencia y darle una medida equitativa
+
+  con margen 0, si el ancho del elemento toma todo el espacio, no vas a ver el centrado
+  necesita un width set para que haya espacio a cada lado para darle automaticamente una media igual
+  a cada lado
+
+  Necesita un width seteadom, sino va a tomar todo el width
