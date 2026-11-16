@@ -1,0 +1,24 @@
+W03 Learning Activity: CSS Layout – Float
+-----------------------------------------
+float: utilizado para sacar a un elemento del flujo normal del programa
+       y posicionarlo a la izq o a la derecha
+
+Los elementos que esten por debajo se va a mover inmediatamente al costado
+en caso de entrar.
+Para forza la permanencia por debajo del elemento con float
+se utiliza clear
+
+float: none -> default
+
+clear: right
+clear: left
+clear: both
+
+usar clear para evitar issues inesperados
+
+
+W03 Learning Activity: CSS Layout – Position:
+---------------------------------------------
+Absolute or fixed positions can lead to unintended outcomes
+Cuando los utilicemos debemos utilizarlos para areas especificas
+
