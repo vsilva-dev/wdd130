@@ -69,17 +69,16 @@ h1 {
   width: 100%;
   padding: 16px;
   text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
+  background-color: var(--secondary-color);
   color: #fff;
 
 }
 
-article {
+.hero article {
   position: absolute;
   bottom: 5px;
   color: #ffff;
-  background-color: var(--accent1-color);
+  background-color: var(--secondary-color);
   opacity: 0.7;
 }
 

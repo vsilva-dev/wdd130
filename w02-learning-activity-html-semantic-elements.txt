@@ -387,3 +387,67 @@ margin 0 auto:
   a cada lado
 
   Necesita un width seteadom, sino va a tomar todo el width
+
+=================================================================
+W03 Learning Activity: CSS Selectors – Type, Universal, Class, ID
+=================================================================
+
+universal      | * {...}          | applies to all elements
+type (element) | h1{ ...}         | applies to all <h1> elements
+class          | .highlight {...} | applies to all elements with the "highlight" class value
+id             | #main-nav {...}  | applies to the one element with the "main-nav" id value
+
+
+Use classes for most of your styling.
+Reserve ids for things that are truly unique on a page
+An id selector also overrides class selectors, which can meke styles harder to change laterales
+
+
+Si un elemento tiene dos clases 
+una clase le aplica un estilo, por ejemplo el background-color
+pro mas abajo la segunda clase tambien aplica esta pripiedad,
+la segunda sobreescribe a la primera
+
+
+DO NOT use the same ID on multiple elements
+DO NOT use IDs for styling that applies to many elements
+DO NOT start class or ID names with numbers
+DO NOT use spaces in class or ID names (use hyphens or underscores)
+
+
+El tag <pre> en HTML se utiliza para mostrar texto preformateado, es decir, conserva los espacios en blanco, tabulaciones y saltos de línea tal como fueron escritos en el código HTML.
+2. ¿Para qué se utiliza habitualmente?
+A. Mostrar código de programación
+B. Representar texto con espacios y alineaciones
+C. Mostrar diagramas ASCII
+
+
+W03 Learning Activity: CSS Layout – Float
+-----------------------------------------
+Se utiliza para posicionar un elemento hacia la izquierda o hacia la derecha de su contenedor
+
+Originalmente se utilizaba mucho para crear diseños de páginas web, pero actualmente su uso principal es distribuir texto alrededor de imágenes.
+
+Sin utilizar float, los elementos se muestran uno debajo del otro, dependiendo de su comportamiento de visualización.
+
+Con float, podemos hacer que el texto rodee la imagen.
+
+should be used for specific purposes
+
+For example, floating related images to the left or right inside containers with paragraphs or other article content is appropriate
+
+The float property can be applied to any element. The float property can be set to left or right to move the element to the left or right in the document flow.
+
+Puede ser aplicado a cualquier elemento
+Los elementos se pueden mover de derecha a izquierda
+
+clear
+-----
+En CSS, la propiedad clear se utiliza junto con float para controlar cómo se posicionan los elementos respecto de otros elementos que tienen un float aplicado.
+  clear: left;
+Su función principal es evitar que un elemento se ubique al lado de un elemento flotante y obligarlo a comenzar debajo de él.
+The clear property in CSS is used to control how elements behave around floating elements
+
+The clear property allows you to stop this wrapping behavior and force an element to come below any floating elements.
+
+

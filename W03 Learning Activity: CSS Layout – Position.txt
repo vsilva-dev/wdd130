@@ -22,3 +22,16 @@ W03 Learning Activity: CSS Layout – Position:
 Absolute or fixed positions can lead to unintended outcomes
 Cuando los utilicemos debemos utilizarlos para areas especificas
 
+
+__________________________________________________________________________
+
+
+W03 Assignment: Rafting Site – About Us Page
+-------------------------------------------
+
+About Us:
+  - provides overview of the purpose of the website
+  - history
+  - other promotions for the company
+
+  
